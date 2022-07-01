@@ -280,7 +280,7 @@ bool OptionsSearcher::search(const std::string& search, bool force/* = false*/)
         }
     }
 
-    if (!full_list)
+    if (!full_list || force)
         sort_found();
  
     if (search_line != search)
